@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>画像表示</title>
+</head>
+
+<body>
+    <div class="aaaaa"></div>
+    <div class="lab-box checkbox-container">
+        <div id="checkbox-container" class="lab-pocket">
+            <input type="checkbox" id="inp01" class="lab-check">
+            <label id="lab01" class="lab">画像名が入ります</label>
+        </div>
+    </div>
+
+    <div class="uiOnOff">
+        <input type="checkbox" id="toggle-ui-change" class="uiOnOff" checked>
+        <label for="toggle-lab-box"></label>
+    </div>
+
+    <div class="ui">
+        <div class="inp-scale">
+            <input id="txt" class="inp-txt" type="number" value="100" min="100" max="1000" step="50">
+            <input id="slider" class="inp-bar" type="range" min="100" max="1000" step="50" value="100">
+        </div>
+
+        <button id="all-button">すべて選択</button>
+        <input id="display" accept=".webp, .png, .svg" type="file" multiple
+            style="opacity: 0; width: 1px; height: 1px;">
+        <label for="display" class="custom-label">ファイルを選択</label>
+        <button id="toggle-mode">Sort Mode: OFF</button>
+
+        <div class="layer-check-button">
+            <input type="checkbox" id="toggle-lab-box" class="labOnOff" checked>
+            <span class="layer-check-title">レイヤーメニュー表示切替</span>
+            <label for="toggle-lab-box"></label>
+        </div>
+
+        <div class="img-opa">
+            <button id="opacitychange">999透明度変更</button>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close-button">&times;</span>
+            <h2>透明度を入力</h2>
+            <p>0~1(0.1刻み)</p>
+            <input type="text" name="" id="opacity-text">
+            <button id="opacity-done">OK</button>
+        </div>
+    </div>
+
+    <div id="img-view"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
